@@ -7,7 +7,8 @@ class USBDeviceManager:
     #Initializes a USBDeviceManager object.
     def __init__(self):
         # List to store USB devices information
-        self.devices = []  
+        self.devices = []
+        self.get_usb_devices()  
      
     #Retrieves USB devices information and populates the devices list.
     def get_usb_devices(self):
@@ -41,9 +42,7 @@ class USBDeviceManager:
         print(tabulate(table_data, headers=["Manufacturer", "Product", "Serial Number", "Vendor ID", "Product ID"], tablefmt="grid"))
 
 if __name__ == "__main__":
-    # Create an instance of USBDeviceManager
-    usb_manager = USBDeviceManager()
     # Retrieve USB devices information
-    usb_manager.get_usb_devices()
+    usb_manager = USBDeviceManager()
     # Print USB devices information in tabular format
     usb_manager.print_in_tabular_format()

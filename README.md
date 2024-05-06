@@ -12,3 +12,9 @@ Install the required libraries using pip:
 
 ```bash
 pip install pywinusb tabulate
+```
+
+## Script Output
+![Script Output](Output.png)
+
+

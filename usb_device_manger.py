@@ -8,10 +8,10 @@ class USBDeviceManager:
     def __init__(self):
         # List to store USB devices information
         self.devices = []
-        self.get_usb_devices()  
+        self.__get_usb_devices()  
      
     #Retrieves USB devices information and populates the devices list.
-    def get_usb_devices(self):
+    def __get_usb_devices(self):
         # Get all HID devices connected to the system
         all_hids = hid.find_all_hid_devices()  
 
@@ -24,6 +24,7 @@ class USBDeviceManager:
                 "Vendor ID": device.vendor_id,
                 "Product ID": device.product_id
             })
+
     #Prints the USB devices information in a tabular format.
     def print_in_tabular_format(self):
         table_data = []  # List to store data for tabulate

@@ -1,6 +1,6 @@
 # USB Device Manager
 
-This Python script allows you to list USB devices connected to your system(windows operating systems) and categorize them based on their product name.
+This Python script allows you to list USB devices connected to your system(windows operating systems) and print the product name, Manufacturer, Serial number, Vendor ID and product ID in Tabular Format.
 
 ## Prerequisites
 
